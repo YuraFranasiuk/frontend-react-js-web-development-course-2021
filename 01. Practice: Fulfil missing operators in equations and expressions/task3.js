@@ -3,25 +3,25 @@ function printSeasonByMonth(month) {
         case 'DECEMBER':
         case 'JANUARY':
         case 'FEBRUARY':
-            console.log('winter')
+            console.log('winter');
             break;
         case 'MARCH':
         case 'APRIL':
         case 'MAY':
-            console.log('spring')
+            console.log('spring');
             break;
         case 'JUN':
         case 'JULY':
         case 'AUGUST':
-            console.log('summer')
+            console.log('summer');
             break;
         case 'SEPTEMBER':
         case 'OCOTBER':
         case 'NOVEMBER':
-            console.log('autumn')
+            console.log('autumn');
             break;
         default:
-            console.log('is not a month')
+            console.log('is not a month');
             break;
     }
 }
