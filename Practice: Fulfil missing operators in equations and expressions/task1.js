@@ -1,16 +1,16 @@
 function printPowsOf2(number) {
     if (typeof number != 'number') {
-        console.log(`"${number}" - "incorrect type"`)
+        console.log(`"${number}" - "incorrect type"`);
 
-        return
+        return;
     }
 
-    const powers = []
+    const powers = [];
     for (let i = 1; i <= number; i *= 2) {
-        powers.push(i)
+        powers.push(i);
     }
 
-    console.log(`${number} - ${powers.join(', ')}`)
+    console.log(`${number} - ${powers.join(', ')}`);
 }
 
 printPowsOf2("302");
