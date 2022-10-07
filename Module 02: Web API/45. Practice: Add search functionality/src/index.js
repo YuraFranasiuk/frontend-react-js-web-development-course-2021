@@ -39,7 +39,7 @@ async function renderMovieCatalogPage(movie, page) {
     }
 
     pageData.results.forEach((movie) => {
-        webApi.insertMovieCard(
+        webApi.pushMovieCard(
             movie.original_title, api.create_poster_url(movie.poster_path)
         );
 

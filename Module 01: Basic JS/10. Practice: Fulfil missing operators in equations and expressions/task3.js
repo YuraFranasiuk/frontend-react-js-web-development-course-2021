@@ -16,7 +16,7 @@ function printSeasonByMonth(month) {
             console.log('summer');
             break;
         case 'SEPTEMBER':
-        case 'OCOTBER':
+        case 'OCTOBER':
         case 'NOVEMBER':
             console.log('autumn');
             break;

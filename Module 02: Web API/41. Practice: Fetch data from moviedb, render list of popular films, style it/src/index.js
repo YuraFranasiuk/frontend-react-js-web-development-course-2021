@@ -7,13 +7,13 @@ window.renderMovieCatalog = (page) => {
     asyncProvider(async () => {
         const moviesPage = await api.fetchPopularMovies(page);
         moviesPage.results.forEach(movie => {
-            webApi.insertMovieCard(
+            webApi.pushMovieCard(
                 movie.original_title,
-                `http://image.tmdb.org/t/p/w500${movie.poster_path}`
+                `https://image.tmdb.org/t/p/w500${movie.poster_path}`
             );
         });
 
-        webApi.updateNavigationButton(page + 1);
+        webApi.updateLoadMoreButton(page + 1);
     });
 };
 

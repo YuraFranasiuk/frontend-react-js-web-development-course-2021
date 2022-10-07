@@ -4,7 +4,7 @@ function calculateWordsInString(string) {
     const wordCountMod10 = words % 10;
     const wordCountMod100 = words % 100;
 
-    let grammaticalCase;
+    let grammaticalCase = null;
 
     if (wordCountMod10  === 0                         ||
         wordCountMod10  >= 5  && wordCountMod10  <= 9 ||

@@ -2,7 +2,7 @@ function timer(seconds) {
     let remaining = seconds;
 
     const intervalID = setInterval(() => {
-        if (remains === 0) {
+        if (remaining === 0) {
             clearInterval(intervalID);
         }
 

@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #f0f6fc;
+    font-family: sans-serif;
+
+    background: #010409;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.header-container {
+    background: #161b22;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+
+    padding: 15px 30px;
+}
+
+.header-content__logo {
+    font-size: 30px;
+}
+
+.header-content__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+}
+
+.navigation__item {
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.navigation__item:hover {
+    color: #babbbd;
+}
+
+.main-container {
+    margin: 25px auto 25px auto;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.movies__list {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+}
+
+.movie-card {
+    position: relative;
+
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.movie-card__poster {
+    position: relative;
+
+    padding: 100% 0 100% 100%;
+
+    overflow: hidden;
+}
+
+.movie-card__poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.movie-card__info {
+    padding: 10px;
+    color: #000000;
+}
+
+.movie-card__bookmark-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 50px;
+    height: 50px;
+
+    background: #fafafa;
+
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    cursor: pointer;
+}
+
+.movie-card__bookmark-button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.fa-solid {
+    color: #FF1E00;
+}
+
+.movie-card__title {
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+.movies__load-more-button {
+    width: 100%;
+
+    padding: 16px 32px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color: #008CBA;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1350px) {
+    .container {
+        margin: 0 25px 0 25px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #moviesList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #moviesList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
